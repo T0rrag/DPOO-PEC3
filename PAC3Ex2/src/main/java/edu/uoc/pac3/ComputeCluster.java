@@ -4,7 +4,7 @@ import java.time.LocalDate;
 
 public class ComputeCluster {
 
-    // Constantes públicas
+    // públicos CONSTANTES
     public static final String INVALID_NAME = "[ERROR] The name cannot be null and has to start with 'cluster-' followed by a number";
     public static final String INVALID_NUM_NODES = "[ERROR] The number of nodes has to be greater or equal to 4";
     public static final String INVALID_NUM_GPUS = "[ERROR] The number of GPUs cannot be negative or zero";
@@ -16,12 +16,12 @@ public class ComputeCluster {
     public static final String MODEL_ALREADY_EXISTS = "[ERROR] The model already exists in the cluster";
     public static final String MODEL_NOT_FOUND = "[ERROR] The model does not exist in the cluster";
 
-    // Constantes privadas
+    // privados CONSTANTES
     private static final int MIN_NUM_NODES = 4;
     private static final int MIN_NUM_GPUS = 1;
     private static final double MIN_RAM_CAPACITY = 16.0;
 
-    // Atributos privados (correctamente definidos sin 'static')
+    // privados aquí
     private String name;
     private int numNodes;
     private int numGPUs;
@@ -29,11 +29,11 @@ public class ComputeCluster {
     private LocalDate nextMaintenanceDate;
     private boolean isGPUEnabled;
 
-    private final int MAX_MODELS;     // <- este debe ser final pero NO static
+    private final int MAX_MODELS;
     private Model[] models;
     private int numModels;
 
-    // Constructor
+    // constructor //
     public ComputeCluster(String name, int numNodes, int numGPUs, double ramCapacity,
                           LocalDate nextMaintenanceDate, boolean isGPUEnabled, int maxModels) {
         setName(name);
@@ -52,7 +52,7 @@ public class ComputeCluster {
         this.numModels = 0;
     }
 
-    // Getters
+    // Getters publicos
     public String getName() {
         return name;
     }
@@ -129,7 +129,7 @@ public class ComputeCluster {
         this.isGPUEnabled = isGPUEnabled;
     }
 
-    // Métodos privados de utilidad
+    // private methods (utilidad - pueden modificarse si dan error)
     private int findModel(Model model) {
         if (model == null) {
             throw new NullPointerException(MODEL_NULL);
@@ -146,7 +146,7 @@ public class ComputeCluster {
         return findModel(model) != -1;
     }
 
-    // Métodos públicos
+    // public methods
     public void addModel(Model model) {
         if (model == null) {
             throw new NullPointerException(MODEL_NULL);
