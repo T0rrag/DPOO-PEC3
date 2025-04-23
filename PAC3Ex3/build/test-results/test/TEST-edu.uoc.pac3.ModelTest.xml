@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="edu.uoc.pac3.ModelTest" tests="4" skipped="0" failures="0" errors="0" timestamp="2025-04-23T15:31:41" hostname="TORRE15" time="0.019">
+  <properties/>
+  <testcase name="Sanity - Fields definitions" classname="edu.uoc.pac3.ModelTest" time="0.003"/>
+  <testcase name="Sanity - Constructor definition" classname="edu.uoc.pac3.ModelTest" time="0.001"/>
+  <testcase name="Sanity - Methods definition" classname="edu.uoc.pac3.ModelTest" time="0.003"/>
+  <testcase name="Model - testAlgorithmType" classname="edu.uoc.pac3.ModelTest" time="0.009"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

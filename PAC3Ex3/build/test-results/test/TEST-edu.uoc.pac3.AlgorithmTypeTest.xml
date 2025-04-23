@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="edu.uoc.pac3.AlgorithmTypeTest" tests="9" skipped="0" failures="0" errors="0" timestamp="2025-04-23T15:31:41" hostname="TORRE15" time="0.037">
+  <properties/>
+  <testcase name="Sanity - Fields definitions" classname="edu.uoc.pac3.AlgorithmTypeTest" time="0.016"/>
+  <testcase name="Sanity - Methods definition" classname="edu.uoc.pac3.AlgorithmTypeTest" time="0.002"/>
+  <testcase name="Algorithm Type - testDescription" classname="edu.uoc.pac3.AlgorithmTypeTest" time="0.001"/>
+  <testcase name="Algorithm Type - testExpectedPrecision" classname="edu.uoc.pac3.AlgorithmTypeTest" time="0.001"/>
+  <testcase name="Algorithm Type - testExpectedRecall" classname="edu.uoc.pac3.AlgorithmTypeTest" time="0.001"/>
+  <testcase name="Algorithm Type - testLearningRate" classname="edu.uoc.pac3.AlgorithmTypeTest" time="0.001"/>
+  <testcase name="Algorithm Type - testExpectedF1Score" classname="edu.uoc.pac3.AlgorithmTypeTest" time="0.001"/>
+  <testcase name="Algorithm Type - testGetType" classname="edu.uoc.pac3.AlgorithmTypeTest" time="0.004"/>
+  <testcase name="Algorithm Type - testGetNextBetterLearningRate" classname="edu.uoc.pac3.AlgorithmTypeTest" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
