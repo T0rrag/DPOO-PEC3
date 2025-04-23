@@ -1,79 +1,10 @@
-<!DOCTYPE html>
-<html>
-<head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-<meta http-equiv="x-ua-compatible" content="IE=edge"/>
-<title>Test results - ModelTest</title>
-<link href="../css/base-style.css" rel="stylesheet" type="text/css"/>
-<link href="../css/style.css" rel="stylesheet" type="text/css"/>
-<script src="../js/report.js" type="text/javascript"></script>
-</head>
-<body>
-<div id="content">
-<h1>ModelTest</h1>
-<div class="breadcrumbs">
-<a href="../index.html">all</a> &gt; 
-<a href="../packages/edu.uoc.pac3.html">edu.uoc.pac3</a> &gt; ModelTest</div>
-<div id="summary">
-<table>
-<tr>
-<td>
-<div class="summaryGroup">
-<table>
-<tr>
-<td>
-<div class="infoBox" id="tests">
-<div class="counter">16</div>
-<p>tests</p>
-</div>
-</td>
-<td>
-<div class="infoBox" id="failures">
-<div class="counter">1</div>
-<p>failures</p>
-</div>
-</td>
-<td>
-<div class="infoBox" id="ignored">
-<div class="counter">0</div>
-<p>ignored</p>
-</div>
-</td>
-<td>
-<div class="infoBox" id="duration">
-<div class="counter">0.026s</div>
-<p>duration</p>
-</div>
-</td>
-</tr>
-</table>
-</div>
-</td>
-<td>
-<div class="infoBox failures" id="successRate">
-<div class="percent">93%</div>
-<p>successful</p>
-</div>
-</td>
-</tr>
-</table>
-</div>
-<div id="tabs">
-<ul class="tabLinks">
-<li>
-<a href="#tab0">Failed tests</a>
-</li>
-<li>
-<a href="#tab1">Tests</a>
-</li>
-</ul>
-<div id="tab0" class="tab">
-<h2>Failed tests</h2>
-<div class="test">
-<a name="checkMethodsSanity()"></a>
-<h3 class="failures">Sanity - Methods definition</h3>
-<span class="code">
-<pre>org.opentest4j.AssertionFailedError: [ERROR] There is some problem with the definition of getter or setter methods: edu.uoc.pac3.Model.setId()
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="edu.uoc.pac3.ModelTest" tests="16" skipped="0" failures="1" errors="0" timestamp="2025-04-23T11:41:05" hostname="TORRE15" time="0.051">
+  <properties/>
+  <testcase name="Sanity - Fields definition" classname="edu.uoc.pac3.ModelTest" time="0.015"/>
+  <testcase name="Sanity - Constructor definition" classname="edu.uoc.pac3.ModelTest" time="0.001"/>
+  <testcase name="Sanity - Methods definition" classname="edu.uoc.pac3.ModelTest" time="0.006">
+    <failure message="org.opentest4j.AssertionFailedError: [ERROR] There is some problem with the definition of getter or setter methods: edu.uoc.pac3.Model.setId()" type="org.opentest4j.AssertionFailedError">org.opentest4j.AssertionFailedError: [ERROR] There is some problem with the definition of getter or setter methods: edu.uoc.pac3.Model.setId()
 	at app//org.junit.jupiter.api.AssertionUtils.fail(AssertionUtils.java:38)
 	at app//org.junit.jupiter.api.Assertions.fail(Assertions.java:134)
 	at app//edu.uoc.pac3.ModelTest.checkMethodsSanity(ModelTest.java:275)
@@ -157,129 +88,21 @@
 	at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:71)
 	at app//worker.org.gradle.process.internal.worker.GradleWorkerMain.run(GradleWorkerMain.java:69)
 	at app//worker.org.gradle.process.internal.worker.GradleWorkerMain.main(GradleWorkerMain.java:74)
-</pre>
-</span>
-</div>
-</div>
-<div id="tab1" class="tab">
-<h2>Tests</h2>
-<table>
-<thead>
-<tr>
-<th>Test</th>
-<th>Method name</th>
-<th>Duration</th>
-<th>Result</th>
-</tr>
-</thead>
-<tr>
-<td class="success">Sanity - Constructor definition</td>
-<td class="success">checkConstructorSanity()</td>
-<td class="success">0.001s</td>
-<td class="success">passed</td>
-</tr>
-<tr>
-<td class="success">Sanity - Fields definition</td>
-<td class="success">checkFieldsSanity()</td>
-<td class="success">0.003s</td>
-<td class="success">passed</td>
-</tr>
-<tr>
-<td class="failures">Sanity - Methods definition</td>
-<td class="failures">checkMethodsSanity()</td>
-<td class="failures">0.004s</td>
-<td class="failures">failed</td>
-</tr>
-<tr>
-<td class="success">Minimum - Valid parameters</td>
-<td class="success">testCreateModel()</td>
-<td class="success">0s</td>
-<td class="success">passed</td>
-</tr>
-<tr>
-<td class="success">Minimum - Description</td>
-<td class="success">testCreateModelDescription()</td>
-<td class="success">0.001s</td>
-<td class="success">passed</td>
-</tr>
-<tr>
-<td class="success">Minimum - FN</td>
-<td class="success">testCreateModelFN()</td>
-<td class="success">0.001s</td>
-<td class="success">passed</td>
-</tr>
-<tr>
-<td class="success">Minimum - FP</td>
-<td class="success">testCreateModelFP()</td>
-<td class="success">0.001s</td>
-<td class="success">passed</td>
-</tr>
-<tr>
-<td class="success">Minimum - First Training Date</td>
-<td class="success">testCreateModelFirstTrainingDate()</td>
-<td class="success">0.001s</td>
-<td class="success">passed</td>
-</tr>
-<tr>
-<td class="success">Minimum - Id</td>
-<td class="success">testCreateModelId()</td>
-<td class="success">0.001s</td>
-<td class="success">passed</td>
-</tr>
-<tr>
-<td class="success">Minimum - Last Training Date</td>
-<td class="success">testCreateModelLastTrainingDate()</td>
-<td class="success">0.001s</td>
-<td class="success">passed</td>
-</tr>
-<tr>
-<td class="success">Minimum - Name</td>
-<td class="success">testCreateModelName()</td>
-<td class="success">0.005s</td>
-<td class="success">passed</td>
-</tr>
-<tr>
-<td class="success">Minimum - TN</td>
-<td class="success">testCreateModelTN()</td>
-<td class="success">0s</td>
-<td class="success">passed</td>
-</tr>
-<tr>
-<td class="success">Minimum - TP</td>
-<td class="success">testCreateModelTP()</td>
-<td class="success">0.001s</td>
-<td class="success">passed</td>
-</tr>
-<tr>
-<td class="success">Minimum - F1 Score</td>
-<td class="success">testGetF1Score()</td>
-<td class="success">0.001s</td>
-<td class="success">passed</td>
-</tr>
-<tr>
-<td class="success">Minimum - Precision</td>
-<td class="success">testGetPrecision()</td>
-<td class="success">0.004s</td>
-<td class="success">passed</td>
-</tr>
-<tr>
-<td class="success">Minimum - Recall</td>
-<td class="success">testGetRecall()</td>
-<td class="success">0.001s</td>
-<td class="success">passed</td>
-</tr>
-</table>
-</div>
-</div>
-<div id="footer">
-<p>
-<div>
-<label class="hidden" id="label-for-line-wrapping-toggle" for="line-wrapping-toggle">Wrap lines
-<input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
-</label>
-</div>Generated by 
-<a href="http://www.gradle.org">Gradle 8.10</a> at 23 abr 2025 13:41:08</p>
-</div>
-</div>
-</body>
-</html>
+</failure>
+  </testcase>
+  <testcase name="Minimum - Valid parameters" classname="edu.uoc.pac3.ModelTest" time="0.005"/>
+  <testcase name="Minimum - Id" classname="edu.uoc.pac3.ModelTest" time="0.0"/>
+  <testcase name="Minimum - Name" classname="edu.uoc.pac3.ModelTest" time="0.002"/>
+  <testcase name="Minimum - Description" classname="edu.uoc.pac3.ModelTest" time="0.001"/>
+  <testcase name="Minimum - TP" classname="edu.uoc.pac3.ModelTest" time="0.001"/>
+  <testcase name="Minimum - FP" classname="edu.uoc.pac3.ModelTest" time="0.001"/>
+  <testcase name="Minimum - TN" classname="edu.uoc.pac3.ModelTest" time="0.003"/>
+  <testcase name="Minimum - FN" classname="edu.uoc.pac3.ModelTest" time="0.001"/>
+  <testcase name="Minimum - First Training Date" classname="edu.uoc.pac3.ModelTest" time="0.0"/>
+  <testcase name="Minimum - Last Training Date" classname="edu.uoc.pac3.ModelTest" time="0.001"/>
+  <testcase name="Minimum - Precision" classname="edu.uoc.pac3.ModelTest" time="0.0"/>
+  <testcase name="Minimum - Recall" classname="edu.uoc.pac3.ModelTest" time="0.0"/>
+  <testcase name="Minimum - F1 Score" classname="edu.uoc.pac3.ModelTest" time="0.001"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

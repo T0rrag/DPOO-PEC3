@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="edu.uoc.pac3.ComputeClusterTest" tests="7" skipped="0" failures="0" errors="0" timestamp="2025-04-22T11:04:31" hostname="TORRE15" time="0.025">
+<testsuite name="edu.uoc.pac3.ComputeClusterTest" tests="7" skipped="0" failures="0" errors="0" timestamp="2025-04-23T11:41:07" hostname="TORRE15" time="0.02">
   <properties/>
   <testcase name="Sanity - Fields definition" classname="edu.uoc.pac3.ComputeClusterTest" time="0.001"/>
   <testcase name="Sanity - Constructor definition" classname="edu.uoc.pac3.ComputeClusterTest" time="0.001"/>
-  <testcase name="Sanity - Methods definition" classname="edu.uoc.pac3.ComputeClusterTest" time="0.002"/>
-  <testcase name="Advanced - Max models" classname="edu.uoc.pac3.ComputeClusterTest" time="0.01"/>
-  <testcase name="Advanced - Add model" classname="edu.uoc.pac3.ComputeClusterTest" time="0.004"/>
-  <testcase name="Advanced - Remove model" classname="edu.uoc.pac3.ComputeClusterTest" time="0.002"/>
+  <testcase name="Sanity - Methods definition" classname="edu.uoc.pac3.ComputeClusterTest" time="0.001"/>
+  <testcase name="Advanced - Max models" classname="edu.uoc.pac3.ComputeClusterTest" time="0.007"/>
+  <testcase name="Advanced - Add model" classname="edu.uoc.pac3.ComputeClusterTest" time="0.003"/>
+  <testcase name="Advanced - Remove model" classname="edu.uoc.pac3.ComputeClusterTest" time="0.001"/>
   <testcase name="Advanced - Get best model" classname="edu.uoc.pac3.ComputeClusterTest" time="0.001"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
